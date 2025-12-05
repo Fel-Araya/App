@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:paddingHorizontal="12dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:src="@drawable/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="Logo Skate"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/navButtons"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/logoImage"
+        android:layout_marginStart="40dp">
+
+        <Button
+            android:id="@+id/btnNavProductos"
+            android:text="PRODUCTOS"
+            android:background="@android:color/transparent"
+            android:textColor="@color/nav_button_text_color"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnNavNosotros"
+            android:text="NOSOTROS"
+            android:background="@android:color/transparent"
+            android:textColor="@color/nav_button_text_color"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnNavAdmin"
+            android:text="ADMIN"
+            android:background="@android:color/transparent"
+            android:textColor="@color/nav_button_text_color"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnNavCarritoNormal"
+        android:src="@drawable/ic_carrito"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Carrito"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/btnNavCarritoAdmin"
+        android:src="@drawable/ic_carrito"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Carrito"
+        android:layout_below="@id/navButtons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnNavLogout"
+        android:text="CERRAR SESIÓN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/nav_button_text_color"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:layout_below="@id/navButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
